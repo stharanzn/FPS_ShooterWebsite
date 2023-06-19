@@ -20,12 +20,12 @@ function App() {
       <AuthProvider>
         <Header/>
         <Routes>
-          <Route path="/" element={<Homepage/>}></Route>
-          <Route path="/download" element={<Download/>}></Route>
-          <Route path="/login" element={<Login/>}></Route>
-          <Route path="/signin" element={<SignIn/>}></Route>
-          <Route path="/profile/:username" element={<RequireAuth><Profile/></RequireAuth>}></Route>
-          <Route path="*" element={<NotFound/>}></Route>
+          <Route path="/FPS_ShooterWebsite/" element={<Homepage/>}></Route>
+          <Route path="/FPS_ShooterWebsite/download" element={<Download/>}></Route>
+          <Route path="/FPS_ShooterWebsite/login" element={<Login/>}></Route>
+          <Route path="/FPS_ShooterWebsite/signin" element={<SignIn/>}></Route>
+          <Route path="/FPS_ShooterWebsite/profile/:username" element={<RequireAuth><Profile/></RequireAuth>}></Route>
+          <Route path="/FPS_ShooterWebsite/*" element={<NotFound/>}></Route>
         </Routes>
 
       </AuthProvider>

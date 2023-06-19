@@ -1,22 +1,22 @@
 import React from 'react'
 import "./login.scss"
 import { useAuth } from '../../utils/auth'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Login() {
 
     const auth = useAuth();   
-    const navigate = useNavigate(); 
-    let loginBtn = document.getElementById("submitBtn");
+    const navigate = useNavigate();     
     
 
-    const loginUser = () =>{
+    const loginUser = async() =>{
         const email = document.getElementById("emailIn").value
         const pass = document.getElementById("passwordIn").value
+        
+        const loginData = {"email": email, "password": pass}
 
-        console.log(email + pass)
-
-        auth.login(email);
+        auth.login(loginData);
 
     }
 
@@ -25,7 +25,7 @@ export default function Login() {
     }
 
     const redirectToSignin = ()=>{
-        navigate('/signin')
+        navigate('/FPS_ShooterWebsite/signin', {replace: true})
     }
 
     // loginBtn.addEventListener('click', loginUser);

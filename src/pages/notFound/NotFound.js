@@ -3,8 +3,9 @@ import React from 'react'
 export default function NotFound() {
   return (
     <>
-    
-        <div>Hello</div>
+        <div className='downlaodPage'>
+          <div>Page Not Found</div>
+        </div>
     </>
   )
 }

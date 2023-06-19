@@ -6,6 +6,8 @@ export const RequireAuth = ({children})=>{
     const auth = useAuth();
 
     if(!auth.user){
-        return <Navigate to={'/'}/>
+        return <Navigate to={'/FPS_ShooterWebsite'}/>
     }
+
+    return children
 }

@@ -28,13 +28,13 @@ export default function Slider() {
               <p class="home__description">Get together with your friends and compete among yourselves or together to gather <strong>crowns. </strong></p>
               <div class="home__buttons">
                 {!auth.user && (
-                <a href='/signin' class="custom-btn btn-8">         
+                <a href='/FPS_ShooterWebsite/signin' class="custom-btn btn-8">         
                     Sign In         
                 </a>
                 )}
 
                 {auth.user && (
-                  <a href='/download' class="custom-btn btn-8">         
+                  <a href='/FPS_ShooterWebsite/download' class="custom-btn btn-8">         
                   Download         
               </a>
                 )}
